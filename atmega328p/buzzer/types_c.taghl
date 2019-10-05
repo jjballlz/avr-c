@@ -1,0 +1,4 @@
+syn keyword CTagsGlobalVariable dutyCycle buzzFlag timeCounter
+syn keyword CTagsConstant bS1 dBuzzer1 dBuzzer2
+syn keyword CTagsDefinedName F_CPU
+

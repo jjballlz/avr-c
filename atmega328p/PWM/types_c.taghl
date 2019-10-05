@@ -1,0 +1,5 @@
+syn keyword CTagsGlobalVariable buttonWatch ledStatedP2
+syn keyword CTagsConstant bS1 bS3 bS2 dP2
+syn keyword CTagsFunction setIO_T main initializeValues
+syn keyword CTagsDefinedName F_CPU
+

@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+F_CPU	main.c	/^#define F_CPU /;"	d	file:
+ISR	main.c	/^ISR(TIMER0_COMPA_vect) {$/;"	f
+bS1	main.c	/^const int bS1 = DDB3;$/;"	v	typeref:typename:const int
+bS2	main.c	/^const int bS2 = DDB4;$/;"	v	typeref:typename:const int
+bS3	main.c	/^const int bS3 = DDB5;$/;"	v	typeref:typename:const int
+bit_flipper	avr_helper_functions.h	/^void bit_flipper(string){$/;"	f	typeref:typename:void
+buzzz	main.c	/^void buzzz() {$/;"	f	typeref:typename:void
+cycleFreq	main.c	/^int cycleFreq = 100;$/;"	v	typeref:typename:int
+dP1	main.c	/^const int dP1 = DDD4;$/;"	v	typeref:typename:const int
+dP2	main.c	/^const int dP2 = DDD3;$/;"	v	typeref:typename:const int
+dP3	main.c	/^const int dP3 = DDD2;$/;"	v	typeref:typename:const int
+dbuzz1	main.c	/^const int dbuzz1 = DDD5;$/;"	v	typeref:typename:const int
+dbuzz2	main.c	/^const int dbuzz2 = DDD6;$/;"	v	typeref:typename:const int
+initializeValues	main.c	/^void initializeValues() {$/;"	f	typeref:typename:void
+ledStatedP1	main.c	/^bool ledStatedP1 = 0;$/;"	v	typeref:typename:bool
+ledStatedP2	main.c	/^bool ledStatedP2 = 0;$/;"	v	typeref:typename:bool
+ledStatedP3	main.c	/^bool ledStatedP3 = 0;$/;"	v	typeref:typename:bool
+main	main.c	/^int main(void) {$/;"	f	typeref:typename:int
+setIO_T	main.c	/^void setIO_T() {$/;"	f	typeref:typename:void
+setStates	main.c	/^void setStates() {$/;"	f	typeref:typename:void
+timeCounter	main.c	/^unsigned long timeCounter = 0;$/;"	v	typeref:typename:unsigned long
+writeLEDvalues	main.c	/^void writeLEDvalues() {$/;"	f	typeref:typename:void

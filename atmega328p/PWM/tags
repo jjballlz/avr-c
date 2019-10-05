@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+F_CPU	main.c	/^#define F_CPU /;"	d	file:
+bS1	main.c	/^const int bS1 = DDB3;$/;"	v	typeref:typename:const int
+bS2	main.c	/^const int bS2 = DDB4;$/;"	v	typeref:typename:const int
+bS3	main.c	/^const int bS3 = DDB5;$/;"	v	typeref:typename:const int
+buttonWatch	main.c	/^bool buttonWatch=1;$/;"	v	typeref:typename:bool
+dP2	main.c	/^const int dP2 = DDD3;$/;"	v	typeref:typename:const int
+initializeValues	main.c	/^void initializeValues (){$/;"	f	typeref:typename:void
+ledStatedP2	main.c	/^bool ledStatedP2=0;$/;"	v	typeref:typename:bool
+main	main.c	/^int main(void)$/;"	f	typeref:typename:int
+setIO_T	main.c	/^void setIO_T(){$/;"	f	typeref:typename:void
