@@ -1,6 +1,11 @@
 MCU=atmega328p
+<<<<<<< HEAD
 PORT=/dev/ttyACM0
 F_CPU=16000000L
+=======
+PORT=/dev/usb/hiddev0
+F_CPU=16000000
+>>>>>>> 3ecde0ba95d57049f73a46f4fb3ed797da0fc181
 CC=avr-gcc
 OBJCOPY=avr-objcopy
 CFLAGS=-Os -DF_CPU=${F_CPU} -mmcu=${MCU}

@@ -3,7 +3,11 @@
  * File >>_> main.c
  * 
  * Creation date >>_> 05.10-2019
+<<<<<<< HEAD
  * Last modified >>_> Sun 06 Oct 2019 01:02:35 PM CEST
+=======
+ * Last modified >>_> Sun 06 Oct 2019 08:11:08 PM CEST
+>>>>>>> 3ecde0ba95d57049f73a46f4fb3ed797da0fc181
  *
  * Author >>_> gian.SANDRI
  *
