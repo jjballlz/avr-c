@@ -1,7 +1,7 @@
 /***************************************
  *
  * File >>_> main.h
- * 
+ *
  * Creation date >>_> 16.10-2019
  * Last modified >>_> Wed 16 Oct 2019 03:19:20 PM CEST
  *
@@ -23,15 +23,15 @@
 /********************************
  *          GAMESTATE
  ********************************/
-typedef struct{
+typedef struct {
 	uint8_t numberOfDots;
 	uint8_t directon;
-}GameState;
+} GameState;
 
-typedef struct{
+typedef struct {
 	uint8_t x;
 	uint8_t y;
-}Snake;
+} Snake;
 
 GameState gameState;
 

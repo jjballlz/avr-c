@@ -3,7 +3,7 @@
  * File >>_> max_libs.c
  *
  * Creation date >>_> 16.10-2019
- * Last modified >>_> Thu 17 Oct 2019 12:06:56 PM CEST
+ * Last modified >>_> Thu 17 Oct 2019 01:30:03 PM CEST
  *
  * Author >>_> gian.SANDRI
  *
@@ -27,13 +27,11 @@ void initDisplay(void) {
 	}
 }
 
-void matrixWrite(GameState* gameState, Snake* snake[127]) {
+void matrixWrite(GameState* gameState, Snake* snake[128]) {
 	// the x y values will be from 1-16(x) and 1-8(y)
-	// if x is from 1-8 = first matrix else 2nd
-	// we are only writing 1s, to turn it off, that will be a specific
-	// funtion
-	uint8_t _RR0[8] = {0, 0, 0, 0, 0, 0, 0, 0};
-	uint8_t _RR1[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+	// if x is from 1-8 = first matrix(0) else 2nd(1)
+	uint8_t _RR0[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+	uint8_t _RR1[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
 	for (uint8_t i = 127; i >= (128 - gameState->numberOfDots); --i) {
 		uint8_t _x = snake[i]->x;
@@ -46,8 +44,8 @@ void matrixWrite(GameState* gameState, Snake* snake[127]) {
 		}
 	}
 
-	for (uint8_t i = 1; i <= 8; ++i) {
-		SPI_transmit(i, _RR0[i-1], i, _RR1[i-1]);
+	for (uint8_t i = 0x1; i <= 0x8; ++i) {
+		SPI_transmit(i, _RR0[(i - 1)], i, _RR1[(i - 1)]);
 	}
 }
 

@@ -1,10 +1,10 @@
-syn keyword CTagsStructure __anon0d3808400108 __anon0d3808400208
-syn keyword CTagsMember num spidata SPI_CLK data buffer directon x SPI_CS clock status y SPI_MOSI load maxDevices numberOfDots
-syn keyword CTagsGlobalVariable gameState _addr0 snake _addr1 _instruction1 _instruction0
+syn keyword CTagsStructure __anon0d3808400208 __anon0d3808400108
+syn keyword CTagsMember num SPI_CS data y SPI_CLK directon status numberOfDots clock SPI_MOSI spidata load maxDevices x buffer
+syn keyword CTagsGlobalVariable _instruction1 gameState _addr1 _addr0 _instruction0 snake
 syn keyword CTagsConstant charTable
-syn keyword CTagsFunction setDigit matrixWrite writeSprite initDisplay setColumnAll setLed LedControl SPI_transmit main setChar setRow MaxMatrix initializeValues init shiftUp SPI_init setIO_T setIntensity clearDisplay shiftRight shiftDown setScanLimit setColumn getDeviceCount shiftLeft shutdown clear reload spiTransfer gameInit setCommand setDot
-syn keyword CTagsType GameState Snake
-syn keyword CTagsDefinedName _MaxMatrix_H_ max7219_reg_digit3 OP_DIGIT0 OP_DIGIT1 _MISO max7219_reg_noop _SCK OP_DISPLAYTEST OP_DIGIT7 max7219_reg_digit0 max7219_reg_scanLimit max7219_reg_digit5 main_h _MOSI max7219_reg_digit4 max7219_reg_displayTest OP_DIGIT2 _SS OP_DIGIT3 F_CPU max7219_reg_digit2 max7219_reg_decodeMode SPI_LIB_h OP_SCANLIMIT OP_DIGIT5 OP_SHUTDOWN OP_DIGIT6 max7219_reg_digit1 max7219_reg_intensity OP_INTENSITY LedControl_h OP_NOOP max_libs_h OP_DECODEMODE max7219_reg_shutdown
-syn keyword CTagsDefinedName max7219_reg_digit7 OP_DIGIT4 max7219_reg_digit6
+syn keyword CTagsFunction setDigit setIntensity shiftUp shiftDown spiTransfer shutdown SPI_transmit setLed LedControl initDisplay initializeValues setColumn clear gameInit main setChar setScanLimit clearDisplay init shiftLeft getDeviceCount shiftRight setCommand matrixWrite reload setIO_T setColumnAll MaxMatrix SPI_init writeSprite setRow setDot
+syn keyword CTagsType Snake GameState
+syn keyword CTagsDefinedName OP_DIGIT6 OP_DIGIT4 max7219_reg_digit0 max7219_reg_shutdown OP_NOOP SPI_LIB_h max7219_reg_scanLimit max7219_reg_intensity OP_DIGIT1 OP_DISPLAYTEST max7219_reg_digit2 OP_DECODEMODE _SCK OP_SCANLIMIT OP_SHUTDOWN _MOSI _MaxMatrix_H_ max7219_reg_digit6 OP_DIGIT0 max7219_reg_digit1 F_CPU _SS OP_DIGIT3 main_h max7219_reg_digit3 _MISO max7219_reg_decodeMode max7219_reg_noop OP_DIGIT5 max7219_reg_displayTest OP_DIGIT7 LedControl_h max7219_reg_digit4 max7219_reg_digit7 OP_DIGIT2
+syn keyword CTagsDefinedName max7219_reg_digit5 max_libs_h OP_INTENSITY
 syn keyword CTagsClass LedControl MaxMatrix
 

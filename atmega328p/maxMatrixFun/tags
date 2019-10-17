@@ -60,7 +60,7 @@ initializeValues	main.c	/^void initializeValues() {$/;"	f	typeref:typename:void
 load	lib/MaxMatrix.h	/^    byte load;$/;"	m	class:MaxMatrix	typeref:typename:byte
 main_h	main.h	/^#define main_h$/;"	d
 main	main.c	/^int main(void) {$/;"	f	typeref:typename:int
-matrixWrite	helpers/max_libs.c	/^void matrixWrite (GameState* gameState, Snake* snake){$/;"	f	typeref:typename:void
+matrixWrite	helpers/max_libs.c	/^void matrixWrite(GameState* gameState, Snake* snake[127]) {$/;"	f	typeref:typename:void
 max7219_reg_decodeMode	lib/MaxMatrix.h	/^#define max7219_reg_decodeMode /;"	d
 max7219_reg_digit0	lib/MaxMatrix.h	/^#define max7219_reg_digit0 /;"	d
 max7219_reg_digit1	lib/MaxMatrix.h	/^#define max7219_reg_digit1 /;"	d
