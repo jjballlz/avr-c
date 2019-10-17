@@ -1,6 +1,6 @@
 MCU=atmega328p
-PORT=/dev/ttyUSB0
-F_CPU=16000000
+PORT=/dev/ttyACM1
+F_CPU=16000000L
 CC=avr-gcc
 OBJCOPY=avr-objcopy
 CFLAGS=-Os -DF_CPU=${F_CPU} -mmcu=${MCU}
@@ -13,7 +13,7 @@ all:
 	${OBJCOPY} -O ihex -R .eeprom ${TARGET}.bin ${TARGET}.hex
 
 flash:
-	avrdude -C/etc/avrdude.conf -v -carduino -p${MCU} -P${PORT} -b115200 -Uflash:w:${TARGET}.hex:i
+	avrdude -C/etc/avrdude.conf -v -cusbasp -p${MCU} -P${PORT} -b115200 -Uflash:w:${TARGET}.hex:i
 
 clean:
 	rm -f *.bin *.hex *.o

@@ -11,13 +11,20 @@ int main (void)
 
 	DDRC = 0xFF;
 	PORTC = 0X00;
-	DDRD |= (1 << DDD4);
+
+	int freq = 0;
 
 	while(1){
 		PORTD |= _BV(PORTD4);
-		_delay_ms(1000);
+		_delay_ms(freq);
 
 		PORTD &= ~_BV(PORTD4);
-		_delay_ms(1000);
+		_delay_ms(freq);
+
+		if (freq < 200){
+			freq++;
+		}else{
+			freq=0;
+		}
 	}
 }
