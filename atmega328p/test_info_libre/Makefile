@@ -1,5 +1,5 @@
 MCU=atmega328p
-PORT=/dev/ttyUSB0
+PORT=/dev/ttyACM0
 F_CPU=16000000
 CC=avr-gcc
 OBJCOPY=avr-objcopy

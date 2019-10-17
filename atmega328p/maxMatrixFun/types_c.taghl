@@ -1,0 +1,10 @@
+syn keyword CTagsStructure __anon0d3808400108 __anon0d3808400208
+syn keyword CTagsMember num spidata SPI_CLK data buffer directon x SPI_CS clock status y SPI_MOSI load maxDevices numberOfDots
+syn keyword CTagsGlobalVariable gameState _addr0 snake _addr1 _instruction1 _instruction0
+syn keyword CTagsConstant charTable
+syn keyword CTagsFunction setDigit matrixWrite writeSprite initDisplay setColumnAll setLed LedControl SPI_transmit main setChar setRow MaxMatrix initializeValues init shiftUp SPI_init setIO_T setIntensity clearDisplay shiftRight shiftDown setScanLimit setColumn getDeviceCount shiftLeft shutdown clear reload spiTransfer gameInit setCommand setDot
+syn keyword CTagsType GameState Snake
+syn keyword CTagsDefinedName _MaxMatrix_H_ max7219_reg_digit3 OP_DIGIT0 OP_DIGIT1 _MISO max7219_reg_noop _SCK OP_DISPLAYTEST OP_DIGIT7 max7219_reg_digit0 max7219_reg_scanLimit max7219_reg_digit5 main_h _MOSI max7219_reg_digit4 max7219_reg_displayTest OP_DIGIT2 _SS OP_DIGIT3 F_CPU max7219_reg_digit2 max7219_reg_decodeMode SPI_LIB_h OP_SCANLIMIT OP_DIGIT5 OP_SHUTDOWN OP_DIGIT6 max7219_reg_digit1 max7219_reg_intensity OP_INTENSITY LedControl_h OP_NOOP max_libs_h OP_DECODEMODE max7219_reg_shutdown
+syn keyword CTagsDefinedName max7219_reg_digit7 OP_DIGIT4 max7219_reg_digit6
+syn keyword CTagsClass LedControl MaxMatrix
+

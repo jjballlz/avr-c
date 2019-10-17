@@ -1,5 +1,5 @@
-syn keyword CTagsGlobalVariable ledStatedP2 cycleFreq ledStatedP3 timeCounter ledStatedP1
-syn keyword CTagsConstant dP2 bS2 bS3 dP1 dP3 dbuzz2 bS1 dbuzz1
-syn keyword CTagsFunction bit_flipper setStates initializeValues setIO_T buzzz main writeLEDvalues ISR
+syn keyword CTagsGlobalVariable cycleFreq ledStatedP2 ledStatedP1 timeCounter ledStatedP3
+syn keyword CTagsConstant dP2 bS1 dP3 dP1 dbuzz2 bS3 bS2 dbuzz1
+syn keyword CTagsFunction initializeValues buzzz setIO_T bit_flipper setStates writeLEDvalues ISR main
 syn keyword CTagsDefinedName F_CPU
 
