@@ -1,10 +1,10 @@
-syn keyword CTagsStructure __anon0d3808400208 __anon0d3808400108
-syn keyword CTagsMember num SPI_CS data y SPI_CLK directon status numberOfDots clock SPI_MOSI spidata load maxDevices x buffer
-syn keyword CTagsGlobalVariable _instruction1 gameState _addr1 _addr0 _instruction0 snake
+syn keyword CTagsStructure __anon0d3808400208 __anon0d3808400108 __anon0d3808400308
+syn keyword CTagsMember status load clock y spidata buffer SPI_MOSI num SPI_CLK directon data x numberOfDots SPI_CS maxDevices
+syn keyword CTagsGlobalVariable gameState food dead snake
 syn keyword CTagsConstant charTable
-syn keyword CTagsFunction setDigit setIntensity shiftUp shiftDown spiTransfer shutdown SPI_transmit setLed LedControl initDisplay initializeValues setColumn clear gameInit main setChar setScanLimit clearDisplay init shiftLeft getDeviceCount shiftRight setCommand matrixWrite reload setIO_T setColumnAll MaxMatrix SPI_init writeSprite setRow setDot
-syn keyword CTagsType Snake GameState
-syn keyword CTagsDefinedName OP_DIGIT6 OP_DIGIT4 max7219_reg_digit0 max7219_reg_shutdown OP_NOOP SPI_LIB_h max7219_reg_scanLimit max7219_reg_intensity OP_DIGIT1 OP_DISPLAYTEST max7219_reg_digit2 OP_DECODEMODE _SCK OP_SCANLIMIT OP_SHUTDOWN _MOSI _MaxMatrix_H_ max7219_reg_digit6 OP_DIGIT0 max7219_reg_digit1 F_CPU _SS OP_DIGIT3 main_h max7219_reg_digit3 _MISO max7219_reg_decodeMode max7219_reg_noop OP_DIGIT5 max7219_reg_displayTest OP_DIGIT7 LedControl_h max7219_reg_digit4 max7219_reg_digit7 OP_DIGIT2
-syn keyword CTagsDefinedName max7219_reg_digit5 max_libs_h OP_INTENSITY
-syn keyword CTagsClass LedControl MaxMatrix
+syn keyword CTagsFunction setRow main setColumnAll shiftUp SPI_init setLed keypress shiftLeft MaxMatrix shutdown setCommand initDisplay matrixWrite clearDisplay event correct_me_if_im_wrong death clear SPI_transmit gameInit reload shiftDown setChar setDot setColumn setIO_T getDeviceCount writeSprite scroll spiTransfer setIntensity setScanLimit setDigit init initializeValues shiftRight LedControl
+syn keyword CTagsType GameState Snake Food
+syn keyword CTagsDefinedName _SCK SPI_LIB_h OP_DIGIT1 OP_NOOP max7219_reg_digit0 max7219_reg_shutdown max_libs_h OP_DIGIT4 _MaxMatrix_H_ OP_SCANLIMIT OP_DIGIT5 OP_DIGIT3 _DOWN OP_DECODEMODE F_CPU OP_DIGIT0 _UP OP_DIGIT7 max7219_reg_digit2 _SS max7219_reg_digit6 max7219_reg_scanLimit _RIGHT main_h OP_DIGIT6 OP_DISPLAYTEST max7219_reg_displayTest max7219_reg_decodeMode max7219_reg_digit4 OP_SHUTDOWN max7219_reg_digit3 _LEFT max7219_reg_intensity _MISO OP_DIGIT2 max7219_reg_digit5 max7219_reg_digit1
+syn keyword CTagsDefinedName LedControl_h _MOSI splashes_h max7219_reg_digit7 OP_INTENSITY max7219_reg_noop
+syn keyword CTagsClass MaxMatrix LedControl
 

@@ -20,6 +20,10 @@
 #define _MISO DDB4
 #define _SCK DDB5
 
+#define _UP DDD5
+#define _DOWN DDD6
+#define _LEFT DDD7
+#define _RIGHT DDD4
 /********************************
  *          GAMESTATE
  ********************************/
@@ -31,10 +35,17 @@ typedef struct {
 typedef struct {
 	uint8_t x;
 	uint8_t y;
+} Food;
+
+typedef struct {
+	uint8_t x;
+	uint8_t y;
 } Snake;
 
 GameState gameState;
 
 Snake snake[128];
+
+Food food;
 
 #endif

@@ -3,7 +3,7 @@
  * File >>_> SPI_LIB.c
  *
  * Creation date >>_> 16.10-2019
- * Last modified >>_> Wed 16 Oct 2019 06:27:11 PM CEST
+ * Last modified >>_> Fri 18 Oct 2019 05:01:42 PM CEST
  *
  * Author >>_> gian.SANDRI
  *
@@ -38,7 +38,6 @@ void SPI_transmit(uint8_t addr0, uint8_t instruction0, uint8_t addr1,
 	SPDR = instruction1;
 	while (!(SPSR & (1 << SPIF)))
 		;
-
 	SPDR = addr0;
 	while (!(SPSR & (1 << SPIF)))
 		;
@@ -46,5 +45,6 @@ void SPI_transmit(uint8_t addr0, uint8_t instruction0, uint8_t addr1,
 	SPDR = instruction0;
 	while (!(SPSR & (1 << SPIF)))
 		;
+
 	PORTB |= (1 << _SS);
 }

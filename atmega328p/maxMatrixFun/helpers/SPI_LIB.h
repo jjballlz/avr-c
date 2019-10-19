@@ -18,5 +18,4 @@
 void SPI_transmit(uint8_t addr0, uint8_t instruction0, uint8_t addr1,
 		  uint8_t instruction1);
 
-
 #endif

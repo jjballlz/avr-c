@@ -6,7 +6,8 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
 F_CPU	main.c	/^#define F_CPU /;"	d	file:
-GameState	main.h	/^}GameState;$/;"	t	typeref:struct:__anon0d3808400108
+Food	main.h	/^} Food;$/;"	t	typeref:struct:__anon0d3808400208
+GameState	main.h	/^} GameState;$/;"	t	typeref:struct:__anon0d3808400108
 LedControl_h	lib/LedControl.h	/^#define LedControl_h$/;"	d
 LedControl	lib/LedControl.h	/^class LedControl {$/;"	c
 LedControl	lib/LedControl.cpp	/^LedControl::LedControl(int dataPin, int clkPin, int csPin, int numDevices) {$/;"	f	class:LedControl
@@ -32,35 +33,42 @@ SPI_LIB_h	helpers/SPI_LIB.h	/^#define SPI_LIB_h$/;"	d
 SPI_MOSI	lib/LedControl.h	/^        int SPI_MOSI;$/;"	m	class:LedControl	typeref:typename:int
 SPI_init	helpers/SPI_LIB.c	/^void SPI_init(void) {$/;"	f	typeref:typename:void
 SPI_transmit	helpers/SPI_LIB.c	/^void SPI_transmit(uint8_t addr0, uint8_t instruction0, uint8_t addr1,$/;"	f	typeref:typename:void
-Snake	main.h	/^}Snake;$/;"	t	typeref:struct:__anon0d3808400208
+Snake	main.h	/^} Snake;$/;"	t	typeref:struct:__anon0d3808400308
+_DOWN	main.h	/^#define _DOWN /;"	d
+_LEFT	main.h	/^#define _LEFT /;"	d
 _MISO	main.h	/^#define _MISO /;"	d
 _MOSI	main.h	/^#define _MOSI /;"	d
 _MaxMatrix_H_	lib/MaxMatrix.h	/^#define _MaxMatrix_H_$/;"	d
+_RIGHT	main.h	/^#define _RIGHT /;"	d
 _SCK	main.h	/^#define _SCK /;"	d
 _SS	main.h	/^#define _SS /;"	d
-__anon0d3808400108	main.h	/^typedef struct{$/;"	s
-__anon0d3808400208	main.h	/^typedef struct{$/;"	s
-_addr0	main.c	/^uint8_t _addr0 = 0x00;$/;"	v	typeref:typename:uint8_t
-_addr1	main.c	/^uint8_t _addr1 = 0x00;$/;"	v	typeref:typename:uint8_t
-_instruction0	main.c	/^uint8_t _instruction0 = 0x00;$/;"	v	typeref:typename:uint8_t
-_instruction1	main.c	/^uint8_t _instruction1 = 0x00;$/;"	v	typeref:typename:uint8_t
+_UP	main.h	/^#define _UP /;"	d
+__anon0d3808400108	main.h	/^typedef struct {$/;"	s
+__anon0d3808400208	main.h	/^typedef struct {$/;"	s
+__anon0d3808400308	main.h	/^typedef struct {$/;"	s
 buffer	lib/MaxMatrix.h	/^    byte buffer[80];$/;"	m	class:MaxMatrix	typeref:typename:byte[80]
 charTable	lib/LedControl.h	/^const static byte charTable [] PROGMEM  = {$/;"	v	typeref:typename:const byte[]PROGMEM
 clearDisplay	lib/LedControl.cpp	/^void LedControl::clearDisplay(int addr) {$/;"	f	class:LedControl	typeref:typename:void
 clear	lib/MaxMatrix.cpp	/^void MaxMatrix::clear()$/;"	f	class:MaxMatrix	typeref:typename:void
 clock	lib/MaxMatrix.h	/^    byte clock;$/;"	m	class:MaxMatrix	typeref:typename:byte
+correct_me_if_im_wrong	main.c	/^void correct_me_if_im_wrong(GameState* gameState, Snake snake[128],$/;"	f	typeref:typename:void
 data	lib/MaxMatrix.h	/^    byte data;$/;"	m	class:MaxMatrix	typeref:typename:byte
+dead	main.c	/^uint16_t dead = 0;$/;"	v	typeref:typename:uint16_t
+death	helpers/splashes.c	/^void death(GameState* gameState, Snake snake[128], Food* food) {$/;"	f	typeref:typename:void
 directon	main.h	/^	uint8_t directon;$/;"	m	struct:__anon0d3808400108	typeref:typename:uint8_t
-gameInit	main.c	/^void gameInit(GameState* gameState, Snake* snake[127]) {$/;"	f	typeref:typename:void
+event	main.c	/^void event(GameState* gameState, Snake snake[128], Food* food) {$/;"	f	typeref:typename:void
+food	main.h	/^Food food;$/;"	v	typeref:typename:Food
+gameInit	main.c	/^void gameInit(GameState* gameState, Snake snake[128], Food* food) {$/;"	f	typeref:typename:void
 gameState	main.h	/^GameState gameState;$/;"	v	typeref:typename:GameState
 getDeviceCount	lib/LedControl.cpp	/^int LedControl::getDeviceCount() {$/;"	f	class:LedControl	typeref:typename:int
 initDisplay	helpers/max_libs.c	/^void initDisplay(void) {$/;"	f	typeref:typename:void
 init	lib/MaxMatrix.cpp	/^void MaxMatrix::init()$/;"	f	class:MaxMatrix	typeref:typename:void
 initializeValues	main.c	/^void initializeValues() {$/;"	f	typeref:typename:void
+keypress	main.c	/^void keypress(GameState* gameState) {$/;"	f	typeref:typename:void
 load	lib/MaxMatrix.h	/^    byte load;$/;"	m	class:MaxMatrix	typeref:typename:byte
 main_h	main.h	/^#define main_h$/;"	d
 main	main.c	/^int main(void) {$/;"	f	typeref:typename:int
-matrixWrite	helpers/max_libs.c	/^void matrixWrite(GameState* gameState, Snake* snake[127]) {$/;"	f	typeref:typename:void
+matrixWrite	helpers/max_libs.c	/^void matrixWrite(GameState gameState, Snake snake[128], Food food) {$/;"	f	typeref:typename:void
 max7219_reg_decodeMode	lib/MaxMatrix.h	/^#define max7219_reg_decodeMode /;"	d
 max7219_reg_digit0	lib/MaxMatrix.h	/^#define max7219_reg_digit0 /;"	d
 max7219_reg_digit1	lib/MaxMatrix.h	/^#define max7219_reg_digit1 /;"	d
@@ -80,6 +88,7 @@ max_libs_h	helpers/max_libs.h	/^#define max_libs_h$/;"	d
 numberOfDots	main.h	/^	uint8_t numberOfDots;$/;"	m	struct:__anon0d3808400108	typeref:typename:uint8_t
 num	lib/MaxMatrix.h	/^    byte num;$/;"	m	class:MaxMatrix	typeref:typename:byte
 reload	lib/MaxMatrix.cpp	/^void MaxMatrix::reload()$/;"	f	class:MaxMatrix	typeref:typename:void
+scroll	main.c	/^void scroll(GameState* gameState, Snake snake[128]) {$/;"	f	typeref:typename:void
 setChar	lib/LedControl.cpp	/^void LedControl::setChar(int addr, int digit, char value, boolean dp) {$/;"	f	class:LedControl	typeref:typename:void
 setColumnAll	lib/MaxMatrix.cpp	/^void MaxMatrix::setColumnAll(byte col, byte value)$/;"	f	class:MaxMatrix	typeref:typename:void
 setColumn	lib/LedControl.cpp	/^void LedControl::setColumn(int addr, int col, byte value) {$/;"	f	class:LedControl	typeref:typename:void
@@ -101,7 +110,10 @@ shutdown	lib/LedControl.cpp	/^void LedControl::shutdown(int addr, bool b) {$/;"	
 snake	main.h	/^Snake snake[128];$/;"	v	typeref:typename:Snake[128]
 spiTransfer	lib/LedControl.cpp	/^void LedControl::spiTransfer(int addr, volatile byte opcode, volatile byte data) {$/;"	f	class:LedControl	typeref:typename:void
 spidata	lib/LedControl.h	/^        byte spidata[16];$/;"	m	class:LedControl	typeref:typename:byte[16]
+splashes_h	helpers/splashes.h	/^#define splashes_h$/;"	d
 status	lib/LedControl.h	/^        byte status[64];$/;"	m	class:LedControl	typeref:typename:byte[64]
 writeSprite	lib/MaxMatrix.cpp	/^void MaxMatrix::writeSprite(int x, int y, const byte* sprite)$/;"	f	class:MaxMatrix	typeref:typename:void
 x	main.h	/^	uint8_t x;$/;"	m	struct:__anon0d3808400208	typeref:typename:uint8_t
+x	main.h	/^	uint8_t x;$/;"	m	struct:__anon0d3808400308	typeref:typename:uint8_t
 y	main.h	/^	uint8_t y;$/;"	m	struct:__anon0d3808400208	typeref:typename:uint8_t
+y	main.h	/^	uint8_t y;$/;"	m	struct:__anon0d3808400308	typeref:typename:uint8_t

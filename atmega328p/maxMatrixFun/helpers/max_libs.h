@@ -16,6 +16,6 @@
 
 void initDisplay(void);
 
-void matrixWrite(GameState* gameState, Snake* snake[127]);
+void matrixWrite(GameState* gameState, Snake snake[127], Food* food);
 
 #endif
