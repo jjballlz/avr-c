@@ -1,6 +1,6 @@
 MCU=atmega328p
-PORT=/dev/ttyACM0
-PROGRAMMER=arduino
+PORT=/dev/usb/hiddev0
+PROGRAMMER=usbasp
 F_CPU=16000000UL
 CC=avr-gcc
 OBJCOPY=avr-objcopy
